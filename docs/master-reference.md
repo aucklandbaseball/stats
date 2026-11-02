@@ -132,6 +132,23 @@ GameChanger profiles. Never auto-merged — GameChanger's rate stats are pre-cal
 so a correct merge isn't possible from this data. The fix is merging the profiles in
 GameChanger. The build log lists flagged players; the public site doesn't show the flag.
 
+### GameChanger quirks (found 3 Nov 2026)
+
+- **Ranks need a minimum per team game.** GameChanger documents: "To qualify for the
+  leaderboard, a player must have an average of one plate appearance or more per game"
+  (help.gc.com, Head-to-Head Leaderboards and Central Stats). Tested against the 25-26 final
+  data, "per game" means games the *team* has played: batting ranked when PA >= team games
+  (523 of 535 players), and pitching follows the same pattern with innings, IP >= team games
+  (257 of 260; not documented by GameChanger). The minimum applies to counting stats too
+  (HR, RBI, K, W), so a player under it gets no rank in any category. After round 1 the
+  minimum is 1 PA / 1 IP.
+- **Innings Pitched is exported as whole innings, part-innings dropped** (2.2 exports as 2,
+  0.2 as 0). ERA, WHIP, BAA and ranks are calculated by GameChanger from the true innings, so
+  they're correct; only the IP column is wrong. Proven from WHIP for all 124 testable
+  pitchers in the 2 Nov exports (17 only explainable by truncation). The true IP can be
+  recovered from WHIP for about three-quarters of pitchers. Not documented by GameChanger;
+  worth reporting to help@gc.com.
+
 ### Rank fix
 
 Every "X Rank" column: if GameChanger left it blank (player didn't qualify — not enough

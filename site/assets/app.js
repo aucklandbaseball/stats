@@ -161,7 +161,7 @@
 
     const site = state.manifest.site || {};
     const home = site.home_url ? `<a href="${esc(site.home_url)}">← ${esc(site.home_label || 'Back to the main site')}</a><br><br>` : '';
-    $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards list players who meet GameChanger's qualifying minimums for each stat.`;
+    $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards use GameChanger's rankings, which only include players with at least one plate appearance (batting) or one inning pitched (pitching) per game their team has played.`;
   }
 
   function statusLine(season) {
