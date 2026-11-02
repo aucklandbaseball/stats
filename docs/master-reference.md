@@ -140,8 +140,8 @@ PA/IP), output **999**. The site treats 999 as "not ranked".
 
 - **12U stats are published from 26-27** (decided 2 Nov 2026). Before that, ABA did not
   publish 12U individual stats, so 25-26 has none.
-- **Divisions (menu order):** Prems, Reserves, Upper Divisional, Lower Divisional, 19U,
-  16U, 14U, 13U, 12U. Upper and Lower Divisional added 2 Nov 2026. A finished season's
+- **Divisions (menu order):** Prems, Reserves, Upper Divisional, Lower Divisional, Div W,
+  19U, 16U, 14U, 13U, 12U. Upper Divisional, Lower Divisional and Div W added 2 Nov 2026. A finished season's
   menu shows only the divisions it has stats for. (Div1 was mentioned once but
   never appeared in a real export — confirm before adding it.)
 - **Little League grade names (from 26-27).** GameChanger exports use LL names; the site
@@ -150,7 +150,7 @@ PA/IP), output **999**. The site treats 999 as "not ranked".
     Big League (19U) → `19U`, Premier → `Prems`, Reserves → `Reserves`,
     Div 1 → `Upper Divisional`, Div 3 → `Lower Divisional` (the draw project's
     "ABA Upper Divisional (1/2)" and "ABA Lower Divisional (3)"; Div 1 = Upper confirmed by
-    Andrew 2 Nov 2026). Div 2 and Div W aren't mapped: a file for either stops the build.
+    Andrew 2 Nov 2026), Div W → `Div W`. Div 2 isn't mapped: a Div 2 file stops the build.
   - LL Minor (10U) is skipped. Any other new name stops the build with a message
     saying exactly what line to add.
 
@@ -164,7 +164,7 @@ One page for every season, division and category; nothing is created by hand.
   yet show dashed), category tabs: Player Stats / Batting / Pitching / Fielding Leaders.
 - **Links:** every view has its own address for GameDay menus or sharing:
   `#<season>-<division>-<view>`, e.g. `#26-27-prems-batting`. Views: `stats`,
-  `batting`, `pitching`, `fielding`; division codes `prems`, `reserves`, `upper-divisional`, `lower-divisional`, `19u`, `16u`,
+  `batting`, `pitching`, `fielding`; division codes `prems`, `reserves`, `upper-divisional`, `lower-divisional`, `div-w`, `19u`, `16u`,
   `14u`, `13u`, `12u`. Player pages: `#26-27-13u-player-<label as lowercase-hyphens>`.
 - **Player Stats:** grouped by team; search, team filter, sort by any column (ERA, WHIP,
   BAA sort lowest first). Name column stays fixed while scrolling on phones.

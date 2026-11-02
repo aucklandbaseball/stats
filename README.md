@@ -52,7 +52,7 @@ https://<site>/#26-27-prems-pitching       Pitching leaders
 https://<site>/#26-27-prems-fielding       Fielding leaders
 ```
 
-Division codes: `prems`, `reserves`, `upper-divisional`, `lower-divisional`, `19u`, `16u`,
+Division codes: `prems`, `reserves`, `upper-divisional`, `lower-divisional`, `div-w`, `19u`, `16u`,
 `14u`, `13u`, `12u`. A single "Stats" link to the
 site's home page also works: it opens the latest season.
 
@@ -66,7 +66,7 @@ becomes the default. Earlier seasons stay available from the menu.
 From 26-27 GameChanger uses Little League names, but the site keeps the ABA division names.
 Current mapping: LL Major → 12U, LL Intermediate → 13U, LL Junior → 14U, LL Senior → 16U,
 Big League → 19U, Premier → Prems, Reserves → Reserves, Div 1 → Upper Divisional,
-Div 3 → Lower Divisional.
+Div 3 → Lower Divisional, Div W → Div W.
 LL Minor (10U) files are skipped.
 If an upload fails with "don't know which division …", edit `config/divisions.json` on GitHub
 and add a line under `"match"`, for example:
