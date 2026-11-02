@@ -125,11 +125,12 @@ design — their stats are genuinely different per grade. Never merge them.
 ### Duplicate Flag
 
 Set to `Check — N entries for this player/team/division` when the same
-First+Last+Team+Division appears more than once. This catches accidental duplicate
+First+Last+Team+Division **and jersey number** appears more than once (a blank jersey
+counts as a value). Name alone isn't enough: two different players can share a name on
+one team, e.g. Bayside 12U Tamaki has two players listed as "Jackson L" (2 Nov 2026). This catches accidental duplicate
 GameChanger profiles. Never auto-merged — GameChanger's rate stats are pre-calculated,
 so a correct merge isn't possible from this data. The fix is merging the profiles in
 GameChanger. The build log lists flagged players; the public site doesn't show the flag.
-Same name, team *and* jersey number is the strongest signal of a genuine duplicate.
 
 ### Rank fix
 

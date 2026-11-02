@@ -84,7 +84,7 @@ GameChanger, only final scores entered) are skipped automatically.
 Same rules as the Airtable pipeline (ABA League Stats Master Reference, Section 2):
 GameChanger columns are matched by name, blank ranks become 999 (non-qualifiers sort last),
 and each player gets a unique label `First Last #Jersey (Division)` (no `#` if the jersey is
-blank). Possible duplicate GameChanger profiles (same name and team twice in a division) are
+blank). Possible duplicate GameChanger profiles (same name, team and jersey number twice in a division) are
 listed in the Actions log rather than shown on the site; fix them by merging the profiles in
 GameChanger.
 

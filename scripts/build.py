@@ -100,7 +100,10 @@ def clean_file(path, division):
 
 
 def finish(rows):
-    key = lambda r: (r["First Name"].lower(), r["Last Name"].lower(), r["Team"], r["Division"])
+    # Same name, team, division AND jersey number (blank counts as a value): two different
+    # players can share a name on one team (e.g. surnames shortened to an initial).
+    key = lambda r: (r["First Name"].lower(), r["Last Name"].lower(), r["Team"], r["Division"],
+                     r.get("Jersey #", ""))
     counts = collections.Counter(key(r) for r in rows)
     for r in rows:
         n = counts[key(r)]
