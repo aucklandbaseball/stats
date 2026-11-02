@@ -61,6 +61,8 @@ becomes the default. Earlier seasons stay available from the menu.
 ## New or renamed grade
 
 From 26-27 GameChanger uses Little League names, but the site keeps the ABA division names.
+Current mapping: LL Intermediate → 13U, LL Junior → 14U, LL Senior → 16U, Big League → 19U,
+Premier → Prems, Reserves → Reserves; LL Major (12U) is skipped.
 If an upload fails with "don't know which division …", edit `config/divisions.json` on GitHub
 and add a line under `"match"`, for example:
 
