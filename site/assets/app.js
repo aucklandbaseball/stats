@@ -161,7 +161,7 @@
 
     const site = state.manifest.site || {};
     const home = site.home_url ? `<a href="${esc(site.home_url)}">← ${esc(site.home_label || 'Back to the main site')}</a><br><br>` : '';
-    $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards use GameChanger's rankings, which only include players with at least one plate appearance (batting) or one inning pitched (pitching) per game their team has played.`;
+    $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards use GameChanger's rankings, which only include players with at least one plate appearance (batting) or one inning pitched (pitching) per game their team has played.<br><br>Innings pitched (IP) shows completed innings only, as GameChanger currently exports it (e.g. 2⅔ innings shows as 2). ERA, WHIP and other pitching stats are calculated by GameChanger from the full innings, so they are correct.`;
   }
 
   function statusLine(season) {
