@@ -1,17 +1,23 @@
 {
-  "_help": "Which division each GameChanger export belongs to, matched against its file name (first match wins). Division names must stay exactly as listed in 'order'. To add a grade, copy a line in 'match' and change the pattern and division.",
-  "order": ["Prems", "Reserves", "19U", "16U", "14U", "13U"],
-  "exclude": ["12U", "LL[_ ]?Major"],
+  "_help": "Which division each GameChanger export belongs to, matched against its file name (first match wins). Division names must stay exactly as listed in 'order' (that is also the order of the menu). To add a grade, copy a line in 'match' and change the pattern and division. Files matching 'exclude' are skipped.",
+  "order": ["Prems", "Reserves", "Upper Divisional", "Lower Divisional", "19U", "16U", "14U", "13U", "12U"],
+  "exclude": ["LL[_ ]?Minor", "10U"],
   "match": [
+    {"pattern": "Upper[_ ]?Div", "division": "Upper Divisional"},
+    {"pattern": "Lower[_ ]?Div", "division": "Lower Divisional"},
+    {"pattern": "Div[_ ]?1(?![0-9])", "division": "Upper Divisional"},
+    {"pattern": "Div[_ ]?3(?![0-9])", "division": "Lower Divisional"},
     {"pattern": "LL[_ ]?Intermediate", "division": "13U"},
     {"pattern": "LL[_ ]?Junior", "division": "14U"},
     {"pattern": "LL[_ ]?Senior", "division": "16U"},
+    {"pattern": "LL[_ ]?Major", "division": "12U"},
     {"pattern": "Big[_ ]?League", "division": "19U"},
     {"pattern": "Prem", "division": "Prems"},
     {"pattern": "Reserve", "division": "Reserves"},
     {"pattern": "19U", "division": "19U"},
     {"pattern": "16U", "division": "16U"},
     {"pattern": "14U", "division": "14U"},
-    {"pattern": "13U", "division": "13U"}
+    {"pattern": "13U", "division": "13U"},
+    {"pattern": "12U", "division": "12U"}
   ]
 }

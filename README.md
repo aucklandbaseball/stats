@@ -6,7 +6,7 @@ stat category, so nothing has to be created by hand each season.
 
 ## Weekly update (about 2 minutes)
 
-1. In GameChanger, export the **Leaders Report** CSV for each division (not 12U).
+1. In GameChanger, export the **Leaders Report** CSV for each division.
 2. On GitHub, open the `raw/26-27` folder → **Add file → Upload files** → drag the CSVs in →
    **Commit changes**. Don't delete last week's files — for each division the newest export
    (by the date in its file name) is used automatically.
@@ -14,6 +14,8 @@ stat category, so nothing has to be created by hand each season.
    means it's live; a red cross means something needs fixing (click it to see the message).
 
 If a division didn't play that week you can skip its file; last week's stays in use.
+If two exports for the same division have the same date (e.g. a `(1)` re-download), the build
+stops and names them — delete the one you don't want.
 
 ## Folder layout
 
@@ -50,7 +52,8 @@ https://<site>/#26-27-prems-pitching       Pitching leaders
 https://<site>/#26-27-prems-fielding       Fielding leaders
 ```
 
-Division codes: `prems`, `reserves`, `19u`, `16u`, `14u`, `13u`. A single "Stats" link to the
+Division codes: `prems`, `reserves`, `upper-divisional`, `lower-divisional`, `19u`, `16u`,
+`14u`, `13u`, `12u`. A single "Stats" link to the
 site's home page also works: it opens the latest season.
 
 ## New season
@@ -61,8 +64,10 @@ becomes the default. Earlier seasons stay available from the menu.
 ## New or renamed grade
 
 From 26-27 GameChanger uses Little League names, but the site keeps the ABA division names.
-Current mapping: LL Intermediate → 13U, LL Junior → 14U, LL Senior → 16U, Big League → 19U,
-Premier → Prems, Reserves → Reserves; LL Major (12U) is skipped.
+Current mapping: LL Major → 12U, LL Intermediate → 13U, LL Junior → 14U, LL Senior → 16U,
+Big League → 19U, Premier → Prems, Reserves → Reserves, Div 1 → Upper Divisional,
+Div 3 → Lower Divisional.
+LL Minor (10U) files are skipped.
 If an upload fails with "don't know which division …", edit `config/divisions.json` on GitHub
 and add a line under `"match"`, for example:
 
@@ -71,7 +76,7 @@ and add a line under `"match"`, for example:
 ```
 
 The `pattern` is part of the file name; `division` must be one of the names in `"order"`.
-12U files (and LL Majors) are skipped automatically — ABA doesn't publish 12U individual stats.
+Files matching `"exclude"` (currently LL Minor / 10U) are skipped automatically.
 
 ## How the stats are cleaned
 

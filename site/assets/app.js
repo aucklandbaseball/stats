@@ -117,16 +117,24 @@
   function resolveRoute() {
     const m = state.manifest;
     const h = decodeURIComponent(location.hash.replace(/^#/, ''));
-    let mm = h.match(/^(\d\d-\d\d)-([a-z0-9]+)-(stats|batting|pitching|fielding)$/);
-    let route = mm ? { season: mm[1], div: mm[2], tab: mm[3] } : null;
+    // Division codes can contain hyphens (e.g. upper-divisional), so match them lazily.
+    let mm = h.match(/^(\d\d-\d\d)-([a-z0-9-]+?)-player-([a-z0-9-]+)$/);
+    let route = mm ? { season: mm[1], div: mm[2], tab: 'player', player: mm[3] } : null;
     if (!route) {
-      mm = h.match(/^(\d\d-\d\d)-([a-z0-9]+)-player-([a-z0-9-]+)$/);
-      if (mm) route = { season: mm[1], div: mm[2], tab: 'player', player: mm[3] };
+      mm = h.match(/^(\d\d-\d\d)-([a-z0-9-]+?)-(stats|batting|pitching|fielding)$/);
+      if (mm) route = { season: mm[1], div: mm[2], tab: mm[3] };
     }
     const season = m.seasons.find((s) => s.id === route?.season) || m.seasons[0];
-    const division = m.divisions.find((d) => slug(d) === route?.div)
-      || season.divisions[0] || m.divisions[0];
+    const visible = visibleDivisions(season);
+    const division = visible.find((d) => slug(d) === route?.div)
+      || season.divisions[0] || visible[0];
     return { season, division, tab: route?.tab || 'stats', player: route?.player || null };
+  }
+
+  // A finished season shows only the divisions it has stats for; the current
+  // season shows every division, with ones that have no stats yet greyed out.
+  function visibleDivisions(season) {
+    return season.final ? season.divisions : state.manifest.divisions;
   }
 
   /* ---------- chrome ---------- */
@@ -139,7 +147,7 @@
       location.hash = link(s.id, r.division, tab);
     };
 
-    $('#divisions').innerHTML = state.manifest.divisions.map((d) => {
+    $('#divisions').innerHTML = visibleDivisions(r.season).map((d) => {
       const has = r.season.divisions.includes(d);
       const tab = r.tab === 'player' ? 'stats' : r.tab;
       const cur = d === r.division ? ' aria-current="page"' : '';
@@ -153,7 +161,7 @@
 
     const site = state.manifest.site || {};
     const home = site.home_url ? `<a href="${esc(site.home_url)}">← ${esc(site.home_label || 'Back to the main site')}</a><br><br>` : '';
-    $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards list players who meet GameChanger's qualifying minimums for each stat. 12U individual stats are not published.`;
+    $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards list players who meet GameChanger's qualifying minimums for each stat.`;
   }
 
   function statusLine(season) {

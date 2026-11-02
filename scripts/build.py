@@ -132,15 +132,24 @@ def write_csv(path, rows):
 
 def build_season(season_dir, cfg):
     """Pick the newest export per division, clean and combine."""
-    newest = {}
+    newest, clash = {}, {}
     for p in sorted(season_dir.glob("*.csv")):
         div = division_for(p.name, cfg)
         if div is None:
-            print(f"  skipped (no 12U stats, by policy): {p.name}")
+            print(f"  skipped (grade not published, see 'exclude' in config/divisions.json): {p.name}")
             continue
         d = file_date(p.name) or date.min
-        if div not in newest or d >= newest[div][0]:
+        if div not in newest or d > newest[div][0]:
             newest[div] = (d, p)
+            clash.pop(div, None)
+        elif d == newest[div][0]:
+            clash.setdefault(div, [newest[div][1].name]).append(p.name)
+    if clash:
+        lines = "\n".join(f"  {div}: " + " | ".join(names) for div, names in clash.items())
+        sys.exit(
+            f"\nERROR: more than one export with the same date for a division:\n{lines}\n"
+            "Delete the copies that shouldn't be used (e.g. a '(1)' re-download), keeping one per division.\n"
+        )
     rows, notes, sources = [], [], {}
     for div in cfg["order"]:
         if div not in newest:
