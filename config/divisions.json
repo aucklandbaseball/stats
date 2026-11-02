@@ -1,9 +1,12 @@
 {
   "_help": "Which division each GameChanger export belongs to, matched against its file name (first match wins). Division names must stay exactly as listed in 'order'. To add a grade, copy a line in 'match' and change the pattern and division.",
   "order": ["Prems", "Reserves", "19U", "16U", "14U", "13U"],
-  "exclude": ["12U", "LL[_ ]?Majors"],
+  "exclude": ["12U", "LL[_ ]?Major"],
   "match": [
     {"pattern": "LL[_ ]?Intermediate", "division": "13U"},
+    {"pattern": "LL[_ ]?Junior", "division": "14U"},
+    {"pattern": "LL[_ ]?Senior", "division": "16U"},
+    {"pattern": "Big[_ ]?League", "division": "19U"},
     {"pattern": "Prem", "division": "Prems"},
     {"pattern": "Reserve", "division": "Reserves"},
     {"pattern": "19U", "division": "19U"},
