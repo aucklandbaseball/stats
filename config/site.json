@@ -1,0 +1,5 @@
+{
+  "_help": "home_url: the ABA website address, shown as a 'Back to' link on every stats page. Leave empty to hide it.",
+  "home_url": "",
+  "home_label": "Auckland Baseball Association"
+}
