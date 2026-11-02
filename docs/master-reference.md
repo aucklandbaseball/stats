@@ -145,9 +145,9 @@ GameChanger. The build log lists flagged players; the public site doesn't show t
 - **Innings Pitched is exported as whole innings, part-innings dropped** (2.2 exports as 2,
   0.2 as 0). ERA, WHIP, BAA and ranks are calculated by GameChanger from the true innings, so
   they're correct; only the IP column is wrong. Proven from WHIP for all 124 testable
-  pitchers in the 2 Nov exports (17 only explainable by truncation). The true IP can be
-  recovered from WHIP for about three-quarters of pitchers. Not documented by GameChanger;
-  worth reporting to help@gc.com.
+  pitchers in the 2 Nov exports (17 only explainable by truncation). Shown as exported
+  (see the principle in Section 3). Not documented by GameChanger; worth reporting to
+  help@gc.com.
 
 ### Rank fix
 
@@ -177,6 +177,11 @@ PA/IP), output **999**. The site treats 999 as "not ranked".
 ---
 
 ## 3. The site
+
+**Principle (Andrew, 3 Nov 2026): keep our touch minimal.** The site shows GameChanger's
+numbers and ranks as exported. No recalculating stats, no reconstructing innings pitched,
+no rankings of our own; otherwise it gets confusing. Known GameChanger quirks (Section 2) are
+documented, not corrected.
 
 One page for every season, division and category; nothing is created by hand.
 
