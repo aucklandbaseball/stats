@@ -1,0 +1,51 @@
+First Name,Last Name,Jersey Number,Team,Games Played,Plate Appearances,Innings Pitched,Batting Average,Batting Average (rank),Quality At-Bats,Quality At-Bats (rank),Runs Batted In,Runs Batted In (rank),Hits,Hits (rank),On-base Percentage,On-base Percentage (rank),Slugging Percentage,Slugging Percentage (rank),On-base Percentage + Slugging Percentage,On-base Percentage + Slugging Percentage (rank),Doubles,Doubles (rank),Triples,Triples (rank),Home Runs,Home Runs (rank),Earned Run Average,Earned Run Average (rank),Wins,Wins (rank),Strikeouts,Strikeouts (rank),Walks Hits Innings Pitched,Walks Hits Innings Pitched (rank),Batting Average Against,Batting Average Against (rank),Fielding Percentage,Fielding Percentage (rank),Putouts,Putouts (rank)
+Connor,Perry,10,Bayside Wolves Premiers,1,,2,,,,,,,,,,,,,,,,,,,,,3.00,12,,,3,7,3.43,13,0.300,10,1.000,,,
+Ngapera,Arthur-Witika,1,Bayside Wolves Premiers,1,4,0,0.000,19,0,37,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,,,,
+Doug,Hassell,11,Bayside Wolves Premiers,1,1,,0.000,19,0,37,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,,,,
+Dontay,Williams,27,Bayside Wolves Premiers,1,1,,,,1,23,0,11,0,19,1.000,1,,,1.000,11,0,7,0,1,0,2,,,,,,,,,,,,,,
+Zach,Clemmet,8,Bayside Wolves Premiers,1,,1,,,,,,,,,,,,,,,,,,,,,0.00,1,,,1,11,3.00,12,0.333,12,,,,
+Matt,Bradley,4,Bayside Wolves Premiers,1,,1,,,,,,,,,,,,,,,,,,,,,0.00,1,,,2,9,0.75,5,0.200,7,,,,
+Yong Min,Lee,19,Bayside Wolves Premiers,1,3,,0.000,19,0,37,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,,,,
+Douglas Thomas,Powers,18,Bayside Wolves Premiers,1,3,0,0.000,19,2,13,1,5,0,19,0.333,21,0.000,19,0.333,22,0,7,0,1,0,2,,,,,,,,,,,,,,
+Stuart,Robertson,12,Bayside Wolves Premiers,1,4,0,0.500,5,3,1,0,11,1,8,0.750,5,1.000,2,1.750,4,1,2,0,1,0,2,,,,,,,,,,,1.000,1,3,11
+Matthew,Thomas,17,Bayside Wolves Premiers,1,5,0,0.600,4,3,1,2,2,3,1,0.600,7,1.200,1,1.800,3,3,1,0,1,0,2,,,,,,,,,,,1.000,1,9,4
+Hugo,Harvey,20,Bayside Wolves Premiers,1,2,0,0.000,19,0,37,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,,,,
+Riley,Wilson,26,Bayside Wolves Premiers,1,1,0,1.000,1,0,37,0,11,1,8,1.000,1,1.000,2,2.000,1,0,7,0,1,0,2,,,,,,,,,,,,,,
+Fletcher,Warren,21,Bayside Wolves Premiers,1,,3,,,,,,,,,,,,,,,,,,,,,0.00,1,1,1,4,5,0.82,6,0.200,7,,,,
+Scott,Drinkwater,28,Bayside Wolves Premiers,1,5,0,0.000,19,2,13,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,,,,
+Shu,Yoshida,6,Bayside Wolves Premiers,1,5,0,0.000,19,1,23,1,5,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,1.000,1,4,10
+Hiromi,Sone,9,Bayside Wolves Premiers,1,5,0,0.333,12,2,13,1,5,1,8,0.600,7,0.333,13,0.933,13,0,7,0,1,0,2,,,,,,,,,,,1.000,1,2,13
+Henry,Leabourn,44,Bayside Wolves Premiers,1,5,0,0.400,11,3,1,3,1,2,2,0.400,17,1.000,2,1.400,6,0,7,0,1,1,1,,,,,,,,,,,1.000,1,9,4
+Messiah,Tuhoro,,HP Premiers,1,5,2,0.667,3,3,1,0,11,2,2,0.800,4,0.667,9,1.467,5,0,7,0,1,0,2,2.63,10,,,4,5,1.50,9,0.200,7,1.000,1,1,15
+Blair,Johnstone,,HP Premiers,1,5,0,0.250,16,2,13,0,11,1,8,0.400,17,0.500,10,0.900,14,1,2,0,1,0,2,,,,,,,,,,,1.000,1,7,6
+Justin,Abrau,,HP Premiers,1,0,0,,,,,,,0,,,,,,0.000,,,,,,,,,,,,,,,,,,,,,
+Andrew,Marck,89,HP Premiers,1,5,0,0.000,19,3,1,0,11,0,19,0.400,17,0.000,19,0.400,20,0,7,0,1,0,2,,,,,,,,,,,1.000,1,3,11
+Sean,Donovan,,HP Premiers,1,4,1,0.000,19,2,13,0,11,0,19,0.250,22,0.000,19,0.250,23,0,7,0,1,0,2,0.00,1,,,0,14,1.00,7,0.333,12,1.000,1,1,15
+Alex,Hill,27,HP Premiers,1,3,0,0.500,5,2,13,1,5,1,8,0.667,6,0.500,10,1.167,10,0,7,0,1,0,2,,,,,,,,,,,,,,
+Taylor,Irwin,,HP Premiers,1,5,3,0.200,18,3,1,0,11,1,8,0.200,27,0.200,18,0.400,20,0,7,0,1,0,2,2.10,9,0,3,10,1,1.20,8,0.133,4,1.000,1,,
+Simon,Aukett,,HP Premiers,1,1,0,1.000,1,0,37,0,11,1,8,1.000,1,1.000,2,2.000,1,0,7,0,1,0,2,,,,,,,,,,,1.000,1,,
+Caleb,Dufty,,HP Premiers,1,4,0,0.000,19,2,13,0,11,0,19,0.250,22,0.000,19,0.250,23,0,7,0,1,0,2,,,,,,,,,,,,,,
+Masamune,Shinjo,,HP Premiers,1,4,2,0.333,12,1,23,0,11,1,8,0.500,9,0.333,13,0.833,15,0,7,0,1,0,2,14.00,14,,,1,11,2.50,11,0.300,10,0.500,27,0,22
+Shayne,Scanlan,,HP Premiers,1,5,0,0.250,16,1,23,0,11,1,8,0.400,17,0.250,17,0.650,18,0,7,0,1,0,2,,,,,,,,,,,1.000,1,15,2
+Keigo,Sumikama,57,NS Knights,1,4,0,0.500,5,3,1,2,2,2,2,0.500,9,0.500,10,1.000,11,0,7,0,1,0,2,,,,,,,,,,,1.000,1,2,13
+Dale,Chetty,84,NS Knights,1,4,0,0.000,19,2,13,0,11,0,19,0.500,9,0.000,19,0.500,19,0,7,0,1,0,2,,,,,,,,,,,0.500,27,1,15
+Devon,Van Rensburg,69,NS Knights,1,4,2,0.000,19,1,23,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,0.00,1,,,3,7,1.50,9,0.143,5,1.000,1,1,15
+Yuto,Ikeda,91,NS Knights,1,4,0,0.500,5,3,1,2,2,2,2,0.500,9,0.750,6,1.250,7,1,2,0,1,0,2,,,,,,,,,,,0.857,26,5,8
+Jakub,Sucharda,18,NS Knights,1,3,6,0.000,19,0,37,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,1.50,8,1,1,6,3,0.67,4,0.095,3,1.000,1,,
+Thomas,Penney,0,NS Knights,1,4,0,0.000,19,1,23,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,1.000,1,1,15
+Matthew,Fegan,43,NS Knights,1,4,1,0.500,5,3,1,1,5,2,2,0.500,9,0.750,6,1.250,7,1,2,0,1,0,2,0.00,1,,,1,11,0.00,1,0.000,1,1.000,1,5,8
+Jason,Greenslade,14,NS Knights,1,4,0,0.000,19,1,23,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,0.923,25,11,3
+Ondrej,Hrdlicka,37,NS Knights,1,4,0,0.333,12,3,1,0,11,1,8,0.500,9,0.333,13,0.833,15,0,7,0,1,0,2,,,,,,,,,,,1.000,1,1,15
+Danesh,Madon,29,Central City Chargers,1,0,0,,,,,,,0,,,,,,0.000,,,,,,,,,,,,,,,,,,,,,
+Vic,Lin,8,Central City Chargers,1,2,0,0.000,19,1,23,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,1.000,1,,
+Riley,Bryant,24,Central City Chargers,1,3,0,0.000,19,1,23,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,,,,
+Masa,Kobori,15,Central City Chargers,1,4,0,0.500,5,3,1,1,5,2,2,0.500,9,0.750,6,1.250,7,1,2,0,1,0,2,,,,,,,,,,,,,,
+Matthew,Gavin,17,Central City Chargers,1,,1,,,,,,,,,,,,,,,,,,,,,0.00,1,,,2,9,0.00,1,0.000,1,,,,
+Franco,Jefferies,10,Central City Chargers,1,4,0,0.000,19,1,23,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,0.000,29,0,22
+Brandon,Wilmshurst,23,Central City Chargers,1,4,0,0.333,12,3,1,0,11,1,8,0.500,9,0.333,13,0.833,15,0,7,0,1,0,2,,,,,,,,,,,1.000,1,17,1
+Samuel,Labrecque,6,Central City Chargers,1,4,5,0.000,19,2,13,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,2.63,10,0,3,10,1,0.56,3,0.150,6,1.000,1,,
+Cooper,Hutchinson,11,Central City Chargers,1,1,0,0.000,19,1,23,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,,,,,,,,,,,,,,
+Nao,Fukuda,44,Central City Chargers,1,4,0,0.000,19,2,13,0,11,0,19,0.250,22,0.000,19,0.250,23,0,7,0,1,0,2,,,,,,,,,,,1.000,1,1,15
+Steven,Skarzenski,14,Central City Chargers,1,4,0,0.000,19,1,23,0,11,0,19,0.250,22,0.000,19,0.250,23,0,7,0,1,0,2,,,,,,,,,,,1.000,1,6,7
+Alexander,Covich,2,Central City Chargers,1,4,0,0.000,19,1,23,0,11,0,19,0.250,22,0.000,19,0.250,23,0,7,0,1,0,2,,,,,,,,,,,1.000,1,,
+Ethan,Cox,48,Central City Chargers,1,1,1,0.000,19,1,23,0,11,0,19,0.000,28,0.000,19,0.000,28,0,7,0,1,0,2,8.40,13,,,5,4,3.60,14,0.444,14,,,,

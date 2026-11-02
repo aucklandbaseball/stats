@@ -1,0 +1,23 @@
+First Name,Last Name,Jersey Number,Team,Games Played,Plate Appearances,Innings Pitched,Batting Average,Batting Average (rank),Quality At-Bats,Quality At-Bats (rank),Runs Batted In,Runs Batted In (rank),Hits,Hits (rank),On-base Percentage,On-base Percentage (rank),Slugging Percentage,Slugging Percentage (rank),On-base Percentage + Slugging Percentage,On-base Percentage + Slugging Percentage (rank),Doubles,Doubles (rank),Triples,Triples (rank),Home Runs,Home Runs (rank),Earned Run Average,Earned Run Average (rank),Wins,Wins (rank),Strikeouts,Strikeouts (rank),Walks Hits Innings Pitched,Walks Hits Innings Pitched (rank),Batting Average Against,Batting Average Against (rank),Fielding Percentage,Fielding Percentage (rank),Putouts,Putouts (rank)
+William,Hampton,48,NS Archers,1,5,0,0.400,8,3,2,2,2,2,2,0.400,11,0.400,9,0.800,10,0,4,0,5,0,1,,,,,,,,,,,0.667,8,2,4
+Korban,McKinlay,96,NS Archers,1,5,0,0.600,3,4,1,4,1,3,1,0.600,6,1.200,3,1.800,3,1,1,1,1,0,1,,,,,,,,,,,1.000,1,1,8
+Yuto,Ikeda,18,NS Archers,1,4,3,0.667,2,3,2,1,3,2,2,0.750,2,0.667,6,1.417,6,0,4,0,5,0,1,6.30,3,1,1,8,1,1.80,3,0.353,3,0.500,10,0,10
+Jian,Labuschagne,89,NS Archers,1,4,0,0.500,4,2,9,1,3,1,5,0.750,2,0.500,8,1.250,7,0,4,0,5,0,1,,,,,,,,,,,,,,
+Shaun,Jin,72,NS Archers,1,4,0,0.000,13,1,14,0,11,0,13,0.250,14,0.000,13,0.250,14,0,4,0,5,0,1,,,,,,,,,,,1.000,1,2,4
+Haocheng,Lyu,45,NS Archers,1,4,0,0.000,13,1,14,1,3,0,13,0.500,7,0.000,13,0.500,13,0,4,0,5,0,1,,,,,,,,,,,,,,
+Hayden,Wong,6,NS Archers,1,5,0,0.250,12,3,2,0,11,1,5,0.400,11,0.250,12,0.650,12,0,4,0,5,0,1,,,,,,,,,,,,,,
+Heath,Coyle-Dowling,20,NS Archers,1,,2,,,,,,,,,,,,,,,,,,,,,0.00,1,,,5,3,0.75,1,0.000,1,1.000,,,
+Benjamin,Butler,28,NS Archers,1,4,0,0.333,9,3,2,0,11,1,5,0.500,7,0.667,6,1.167,8,1,1,0,5,0,1,,,,,,,,,,,1.000,1,13,1
+Holden,Benesch,10,NS Archers,1,4,0,0.333,9,3,2,1,3,1,5,0.500,7,0.333,10,0.833,9,0,4,0,5,0,1,,,,,,,,,,,,,,
+Messiah,Tuhoro,,HP 19U,1,3,0,0.500,4,3,2,1,3,1,5,0.667,4,1.000,4,1.667,4,1,1,0,5,0,1,,,,,,,,,,,0.667,8,2,4
+James,McCloughen,,HP 19U,1,1,0,0.000,13,1,14,0,11,0,13,0.000,15,0.000,13,0.000,15,0,4,0,5,0,1,,,,,,,,,,,,,,
+Reilly,Tyer,,HP 19U,1,2,2,1.000,1,2,9,1,3,1,5,1.000,1,3.000,1,4.000,1,0,4,1,1,0,1,21.00,5,,,4,4,3.50,4,0.400,4,,,,
+Ethan,Lloyd,,HP 19U,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Simon,Aukett,,HP 19U,1,4,2,0.500,4,3,2,0,11,2,2,0.500,7,1.000,4,1.500,5,0,4,1,1,0,1,17.50,4,0,2,6,2,4.00,5,0.462,5,,,,
+Cohen,Wills,,HP 19U,1,1,0,0.000,13,1,14,0,11,0,13,0.000,15,0.000,13,0.000,15,0,4,0,5,0,1,,,,,,,,,,,,,,
+Teppei,Saito,,HP 19U,1,3,0,0.333,9,0,19,0,11,1,5,0.333,13,0.333,10,0.667,11,0,4,0,5,0,1,,,,,,,,,,,,,,
+Nikau,Waru,,HP 19U,1,3,2,0.500,4,1,14,1,3,1,5,0.667,4,1.500,2,2.167,2,0,4,1,1,0,1,0.00,1,,,3,5,1.00,2,0.143,2,1.000,1,2,4
+Kayden,Wood,,HP 19U,1,3,0,0.000,13,0,19,0,11,0,13,0.000,15,0.000,13,0.000,15,0,4,0,5,0,1,,,,,,,,,,,1.000,1,1,8
+Zebastian,McFarlane,,HP 19U,1,2,0,0.000,13,2,9,0,11,0,13,0.000,15,0.000,13,0.000,15,0,4,0,5,0,1,,,,,,,,,,,1.000,1,6,3
+Toby,McCamish,,HP 19U,1,3,0,0.000,13,2,9,0,11,0,13,0.000,15,0.000,13,0.000,15,0,4,0,5,0,1,,,,,,,,,,,,,,
+Curtis,Campbell,,HP 19U,1,4,0,0.000,13,2,9,1,3,0,13,0.000,15,0.000,13,0.000,15,0,4,0,5,0,1,,,,,,,,,,,1.000,1,7,2
