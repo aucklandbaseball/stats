@@ -146,8 +146,11 @@ GameChanger. The build log lists flagged players; the public site doesn't show t
   0.2 as 0). ERA, WHIP, BAA and ranks are calculated by GameChanger from the true innings, so
   they're correct; only the IP column is wrong. Proven from WHIP for all 124 testable
   pitchers in the 2 Nov exports (17 only explainable by truncation). Shown as exported
-  (see the principle in Section 3). Not documented by GameChanger; worth reporting to
-  help@gc.com.
+  (see the principle in Section 3). Reported to GameChanger support; **fixed in the 18 Nov
+  2026 exports**, which give IP in baseball notation (.1 = one out, .2 = two outs; 2.2 = 2⅔),
+  consistent with ERA and WHIP. The 25-26 archive still has whole innings, so its pages keep
+  the old footnote (`ip_whole_innings_seasons` in `config/site.json`); 26-27 pages explain
+  the notation instead.
 
 ### Rank fix
 

@@ -161,7 +161,12 @@
 
     const site = state.manifest.site || {};
     const home = site.home_url ? `<a href="${esc(site.home_url)}">← ${esc(site.home_label || 'Back to the main site')}</a><br><br>` : '';
-    $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards use GameChanger's rankings, which only include players with at least one plate appearance (batting) or one inning pitched (pitching) per game their team has played.<br><br>Innings pitched (IP) shows completed innings only, as GameChanger currently exports it (e.g. 2⅔ innings shows as 2). ERA, WHIP and other pitching stats are calculated by GameChanger from the full innings, so they are correct.`;
+    // GameChanger exported whole innings only until Nov 2026; seasons listed in
+    // config/site.json (ip_whole_innings_seasons) keep the note saying so.
+    const ipNote = (site.ip_whole_innings_seasons || []).includes(r.season.id)
+      ? 'Innings pitched (IP) shows completed innings only, as GameChanger exported it at the time (e.g. 2⅔ innings shows as 2). ERA, WHIP and other pitching stats were calculated by GameChanger from the full innings, so they are correct.'
+      : 'Innings pitched (IP) uses baseball notation: .1 is one out and .2 is two outs, so 2.2 means 2⅔ innings.';
+    $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards use GameChanger's rankings, which only include players with at least one plate appearance (batting) or one inning pitched (pitching) per game their team has played.<br><br>${ipNote}`;
   }
 
   // Each division shows the date of its own GameChanger file, since grades can be
