@@ -253,6 +253,15 @@
         <tbody id="tbody"></tbody>
       </table></div>`;
 
+    // The column-name row is frozen just under the group row, so it needs that row's height.
+    const table = $('#main table.stats');
+    const setGroupsHeight = () => table.style.setProperty('--groups-h', `${table.tHead.rows[0].getBoundingClientRect().height}px`);
+    setGroupsHeight();
+    if (!state.groupsResize) {
+      state.groupsResize = true;
+      window.addEventListener('resize', () => { const t2 = $('#main table.stats'); if (t2) t2.style.setProperty('--groups-h', `${t2.tHead.rows[0].getBoundingClientRect().height}px`); });
+    }
+
     const ncols = allKeys.length + 2;
     const rowHtml = (p) => `<tr><td class="name"><a href="${link(r.season.id, r.division, null, playerId(p))}">${esc(nameOf(p))}</a></td><td class="jersey">${esc(p['Jersey #'] || '')}</td>${COL_GROUPS.map((g) => g.keys.map((k, i) => {
       const v = fmt(k, p[k]);
