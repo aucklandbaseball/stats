@@ -44,7 +44,7 @@ division with the same date stop the build with a message naming them.
 | `site/` | The page: `index.html`, `assets/app.js`, `assets/style.css` |
 | `README.md` | Setup and weekly steps for whoever maintains it |
 
-The build writes `data/manifest.json` (seasons, divisions with data, "stats to" date)
+The build writes `data/manifest.json` (seasons, divisions with data, each division's export date)
 and `data/<season>/stats.csv` into the published site.
 
 ### Ownership
@@ -200,8 +200,8 @@ One page for every season, division and category; nothing is created by hand.
   - Pitching: ERA, WHIP, BAA, W, K
   - Fielding: FPCT, PO
 - **Player pages:** every stat with the player's rank in their division.
-- **Status line:** "stats to <date of newest export>" for the current season, "final
-  stats" for archived seasons.
+- **Status line:** "stats to <date of that division's export>" for the current season (divisions
+  can be uploaded on different days; from 18 Nov 2026), "final stats" for archived seasons.
 - **Style:** ABA navy `#1e3778`, Anton headings, Barlow text (Google Fonts), navy pills
   matching the main site.
 

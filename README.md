@@ -9,7 +9,8 @@ stat category, so nothing has to be created by hand each season.
 1. In GameChanger, export the **Leaders Report** CSV for each division.
 2. On GitHub, open the `raw/26-27` folder → **Add file → Upload files** → drag the CSVs in →
    **Commit changes**. Don't delete last week's files — for each division the newest export
-   (by the date in its file name) is used automatically.
+   (by the date in its file name) is used automatically. Divisions can be uploaded together or
+   one at a time; each division's pages show the date of its own export.
 3. Within a couple of minutes the site updates. To check, open the **Actions** tab: a green tick
    means it's live; a red cross means something needs fixing (click it to see the message).
 

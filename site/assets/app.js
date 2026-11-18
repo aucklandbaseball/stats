@@ -164,17 +164,20 @@
     $('#footer').innerHTML = `${home}Stats from GameChanger${r.season.final ? '' : ', updated weekly during the season'}. Leaderboards use GameChanger's rankings, which only include players with at least one plate appearance (batting) or one inning pitched (pitching) per game their team has played.<br><br>Innings pitched (IP) shows completed innings only, as GameChanger currently exports it (e.g. 2⅔ innings shows as 2). ERA, WHIP and other pitching stats are calculated by GameChanger from the full innings, so they are correct.`;
   }
 
-  function statusLine(season) {
+  // Each division shows the date of its own GameChanger file, since grades can be
+  // uploaded on different days; the season's newest date is the fallback.
+  function statusLine(season, division) {
     if (season.final) return `${esc(season.label)} · final stats`;
-    if (season.updated) {
-      const d = new Date(season.updated + 'T12:00:00');
+    const updated = (division && season.sources && season.sources[division] && season.sources[division].date) || season.updated;
+    if (updated) {
+      const d = new Date(updated + 'T12:00:00');
       return `${esc(season.label)} · stats to ${d.toLocaleDateString('en-NZ', { day: 'numeric', month: 'long', year: 'numeric' })}`;
     }
     return esc(season.label);
   }
 
-  function head(title, season) {
-    return `<div class="page-head"><h1>${esc(title)}</h1><span class="status">${statusLine(season)}</span></div>`;
+  function head(title, season, division) {
+    return `<div class="page-head"><h1>${esc(title)}</h1><span class="status">${statusLine(season, division)}</span></div>`;
   }
 
   /* ---------- leaderboards ---------- */
@@ -212,7 +215,7 @@
 
   function renderLeaders(r, rows) {
     const label = TABS.find((t) => t.id === r.tab).label;
-    $('#main').innerHTML = head(`${r.division} ${label}`, r.season)
+    $('#main').innerHTML = head(`${r.division} ${label}`, r.season, r.division)
       + `<div class="leader-grid">${LEADERS[r.tab].map((k) => leaderCard(r, rows, k)).join('')}</div>`
       + (r.tab === 'pitching' ? '<p class="footnote">ERA, WHIP and BAA: lower is better.</p>' : '');
   }
@@ -224,7 +227,7 @@
     if (t.team && !teams.includes(t.team)) t.team = '';
     const allKeys = COL_GROUPS.flatMap((g) => g.keys);
 
-    $('#main').innerHTML = head(`${r.division} Player Stats`, r.season) + `
+    $('#main').innerHTML = head(`${r.division} Player Stats`, r.season, r.division) + `
       <div class="toolbar">
         <label class="sr-only" for="q">Search players</label>
         <input id="q" type="search" placeholder="Search player or team" value="${esc(t.query)}" autocomplete="off">
@@ -318,7 +321,7 @@
     $('#main').innerHTML = back + `
       <div class="card player-head">
         <h1>${esc(nameOf(p))}</h1>${p['Jersey #'] ? `<span class="jersey-big">#${esc(p['Jersey #'])}</span>` : ''}
-        <div class="meta">${esc(p.Team)} · ${esc(r.division)} · ${statusLine(r.season)}</div>
+        <div class="meta">${esc(p.Team)} · ${esc(r.division)} · ${statusLine(r.season, r.division)}</div>
       </div>
       <div class="player-grid">${sections.map((s) => `
         <section class="card player-sec"><h2>${s.label}</h2>
@@ -347,7 +350,7 @@
       return;
     }
     if (!rows.length) {
-      $('#main').innerHTML = head(`${r.division} ${tabLabel}`, r.season) + `<p class="notice">No ${esc(r.division)} stats for the ${esc(r.season.label.replace(' Season', ''))} season yet.</p>`;
+      $('#main').innerHTML = head(`${r.division} ${tabLabel}`, r.season, r.division) + `<p class="notice">No ${esc(r.division)} stats for the ${esc(r.season.label.replace(' Season', ''))} season yet.</p>`;
       return;
     }
     if (r.tab === 'player') renderPlayer(r, rows);
